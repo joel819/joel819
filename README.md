@@ -14,7 +14,7 @@ I build AI agents and backends that connect to the tools a business already uses
 | [fastapi-saas-backend](https://github.com/joel819/fastapi-saas-backend) | Production-style backend: JWT auth, Postgres, Stripe webhooks, full test suite |
 | [mcp-server-template](https://github.com/joel819/mcp-server-template) | MCP server exposing a real API so any agent can use it as a tool |
 | [agent-spend-guard](https://github.com/joel819/agent-spend-guard) | Spend limits and human approval for AI agents that handle funds |
-
+| [sandboxed-agent](https://github.com/joel819/sandboxed-agent) | Runs support-agent inside an NVIDIA OpenShell sandbox — policy-restricted file/network access, everything outside the allow-list blocked and logged |
 ## Building
 
 **SoverGrid** — a routing layer for decentralized compute.
