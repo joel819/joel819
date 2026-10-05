@@ -1,24 +1,111 @@
-# Joel Oyewole
+<div align="center">
 
-I build AI agents and backends that connect to the tools a business already uses.
+<img src="assets/banner.svg" alt="Joel Oyewole. I build AI agents and backends that connect to the tools a business already uses." width="100%">
 
-**Stack:** Python · FastAPI · PostgreSQL · LLM APIs (OpenAI-compatible) · RAG · MCP · Docker
+<br>
+
+<img src="assets/stack.svg" alt="Stack: Python, FastAPI, PostgreSQL, LLM APIs (OpenAI-compatible), RAG, MCP, Docker" width="86%">
+
+<br><br>
+
+<a href="https://x.com/joel_depin"><b>Follow on X</b></a> &nbsp;·&nbsp; <a href="#selected-work"><b>Selected work</b></a> &nbsp;·&nbsp; <a href="#building"><b>Building</b></a>
+
+<img src="assets/divider.svg" alt="" width="100%">
+
+</div>
 
 ## Selected work
 
-| Project | What it does |
-|---|---|
-| [docs-rag-chatbot](https://github.com/joel819/docs-rag-chatbot) | Answers questions over company documents, with citations to the source page |
-| [support-agent](https://github.com/joel819/support-agent) | Support agent that combines document search with live order lookups via tool calling |
-| [invoice-extractor](https://github.com/joel819/invoice-extractor) | Turns messy PDF invoices into validated structured JSON through a FastAPI endpoint |
-| [fastapi-saas-backend](https://github.com/joel819/fastapi-saas-backend) | Production-style backend: JWT auth, Postgres, Stripe webhooks, full test suite |
-| [mcp-server-template](https://github.com/joel819/mcp-server-template) | MCP server exposing a real API so any agent can use it as a tool |
-| [agent-spend-guard](https://github.com/joel819/agent-spend-guard) | Spend limits and human approval for AI agents that handle funds |
-| [sandboxed-agent](https://github.com/joel819/sandboxed-agent) | Runs support-agent inside an NVIDIA OpenShell sandbox — policy-restricted file/network access, everything outside the allow-list blocked and logged |
+Every project below runs locally for free, with a demo mode that needs no API keys, and has an offline test suite.
+
+<table>
+<tr>
+<td colspan="2" align="center">
+<a href="https://github.com/joel819/docs-rag-chatbot"><img src="assets/docs-rag-chatbot.png" alt="docs-rag-chatbot: a chat answering a question with a clickable page citation" width="100%"></a>
+<br><br>
+<h3><a href="https://github.com/joel819/docs-rag-chatbot">docs-rag-chatbot</a></h3>
+Answers questions over company documents, with citations to the source page. Click a citation and the PDF opens at that page. A question the documents don't cover gets an honest "I couldn't find that" instead of a guess.
+<br><sub><b>FastAPI · ChromaDB · RAG · sentence-transformers · Groq</b></sub>
+<br><br>
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+<a href="https://github.com/joel819/support-agent"><img src="assets/support-agent.png" alt="support-agent: answers tagged with the route taken, with expandable tool calls" width="100%"></a>
+<br>
+<h3><a href="https://github.com/joel819/support-agent">support-agent</a></h3>
+Support agent that combines document search with live order lookups via tool calling. Every answer shows the route it took and the exact tool calls behind it.
+<br><sub><b>FastAPI · tool calling · RAG · routing log</b></sub>
+</td>
+<td width="50%" valign="top">
+<a href="https://github.com/joel819/invoice-extractor"><img src="assets/invoice-extractor.png" alt="invoice-extractor: an invoice flagged for review because the total does not add up" width="100%"></a>
+<br>
+<h3><a href="https://github.com/joel819/invoice-extractor">invoice-extractor</a></h3>
+Turns messy PDF invoices into validated structured JSON through a FastAPI endpoint. Confidence on every field, and arithmetic errors are flagged for review, never silently fixed.
+<br><sub><b>FastAPI · Pydantic · LLM extraction · validation</b></sub>
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+<a href="https://github.com/joel819/fastapi-saas-backend"><img src="assets/fastapi-saas-backend.png" alt="fastapi-saas-backend: a playground showing the premium gate, checkout and webhook replay" width="100%"></a>
+<br>
+<h3><a href="https://github.com/joel819/fastapi-saas-backend">fastapi-saas-backend</a></h3>
+Production-style backend: JWT auth with rotating refresh tokens, subscriptions, verified and idempotent Stripe webhooks, rate limiting and a full test suite.
+<br><sub><b>FastAPI · JWT · Stripe webhooks · SQLAlchemy</b></sub>
+</td>
+<td width="50%" valign="top">
+<a href="https://github.com/joel819/mcp-server-template"><img src="assets/mcp-server-template.png" alt="mcp-server-template: an MCP explorer page listing a repository's files" width="100%"></a>
+<br>
+<h3><a href="https://github.com/joel819/mcp-server-template">mcp-server-template</a></h3>
+MCP server exposing a real API so any agent can use it as a tool. Streamable HTTP and stdio from one definition, with a built-in explorer page.
+<br><sub><b>MCP · GitHub API · streamable HTTP · stdio</b></sub>
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+<a href="https://github.com/joel819/agent-spend-guard"><img src="assets/agent-spend-guard.png" alt="agent-spend-guard: a dashboard with a daily cap meter, a payment waiting for a human and a rejected payment" width="100%"></a>
+<br>
+<h3><a href="https://github.com/joel819/agent-spend-guard">agent-spend-guard</a></h3>
+Spend limits and human approval for AI agents that handle funds. Auto-approve under a cap, a human decides above it, a hard reject at the daily limit, all in a tamper-evident audit log.
+<br><sub><b>FastAPI · SQLite · policy as config · audit log</b></sub>
+</td>
+<td width="50%" valign="top">
+<a href="https://github.com/joel819/sandboxed-agent"><img src="assets/sandboxed-agent.png" alt="sandboxed-agent: the policy drawn as a fence around the agent" width="100%"></a>
+<br>
+<h3><a href="https://github.com/joel819/sandboxed-agent">sandboxed-agent</a></h3>
+Runs support-agent inside an NVIDIA OpenShell sandbox: policy-restricted file and network access, with everything outside the allow-list blocked and logged.
+<br><sub><b>NVIDIA OpenShell · policy as code · Docker</b></sub>
+</td>
+</tr>
+</table>
+
+<div align="center"><img src="assets/divider.svg" alt="" width="100%"></div>
+
+## How I build
+
+<table>
+<tr>
+<td width="33%" valign="top">
+<b>Free to run</b><br>
+Each project has a demo mode that works with no API keys, so anyone can clone it and see it working in a minute.
+</td>
+<td width="33%" valign="top">
+<b>Tested offline</b><br>
+Test suites that need no keys, no model download and no network, so they run anywhere.
+</td>
+<td width="33%" valign="top">
+<b>Honest about failure</b><br>
+Low-confidence flags instead of silent fixes, hard rejects with the numbers, "I couldn't find that" instead of a guess.
+</td>
+</tr>
+</table>
+
+<div align="center"><img src="assets/divider.svg" alt="" width="100%"></div>
+
 ## Building
 
-**SoverGrid** — a routing layer for decentralized compute.
+**SoverGrid**: a routing layer for decentralized compute.
 
 ## Contact
 
-[X](https://x.com/joel_depin) · [Upwork](#)
+[X (@joel_depin)](https://x.com/joel_depin)
