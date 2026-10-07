@@ -30,6 +30,16 @@ Answers questions over company documents, with citations to the source page. Cli
 </td>
 </tr>
 <tr>
+<td colspan="2" align="center">
+<a href="https://github.com/joel819/product-data-extractor"><img src="assets/product-data-extractor.png" alt="product-data-extractor: the output of its demo, six product pages extracted with per-field sources, and one page filled in by the LLM fallback" width="100%"></a>
+<br><br>
+<h3><a href="https://github.com/joel819/product-data-extractor">product-data-extractor</a></h3>
+Paste a product page URL, get clean structured product data back, and optionally auto-fill a Google Sheets row. It reads the standard markup shops already publish (JSON-LD, Open Graph, microdata) and only asks an LLM for what is still missing, keeping only values that appear in the page text. Anything not found stays empty, and every field says where it came from and how much to trust it.
+<br><sub><b>FastAPI · schema.org · SSRF-safe fetching · LLM fallback · Google Sheets (Apps Script)</b></sub>
+<br><br>
+</td>
+</tr>
+<tr>
 <td width="50%" valign="top">
 <a href="https://github.com/joel819/support-agent"><img src="assets/support-agent.png" alt="support-agent: answers tagged with the route taken, with expandable tool calls" width="100%"></a>
 <br>
