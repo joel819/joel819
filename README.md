@@ -40,6 +40,32 @@ Paste a product page URL, get clean structured product data back, and optionally
 </td>
 </tr>
 <tr>
+<td colspan="2" align="center">
+<a href="https://github.com/joel819/catalog-chat-assistant"><img src="assets/catalog-chat-assistant.png" alt="catalog-chat-assistant: two shops, a café and a bookshop, each with its own catalog-grounded chat, showing product cards and the tool calls behind each answer" width="100%"></a>
+<br><br>
+<h3><a href="https://github.com/joel819/catalog-chat-assistant">catalog-chat-assistant</a></h3>
+A multi-tenant chat assistant that answers only from a business's own product catalog: recommendations, comparisons and "which items are vegan under $5?" lookups. The model works through search, filter and lookup tools instead of being handed the catalog, a question the catalog can't answer gets an honest "not in our catalog", and one shop can never see another's products.
+<br><sub><b>FastAPI · tool calling · ChromaDB · sentence-transformers · multi-tenant · Groq</b></sub>
+<br><br>
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+<a href="https://github.com/joel819/web-flow-bot"><img src="assets/web-flow-bot.png" alt="web-flow-bot: screenshots from a real run in which the bot hit two 503 errors, retried with backoff and still verified the confirmation number" width="100%"></a>
+<br>
+<h3><a href="https://github.com/joel819/web-flow-bot">web-flow-bot</a></h3>
+Playwright bot that logs in, fills a multi-field form, submits it and verifies the confirmation reference number. Per-step retries with backoff, a screenshot of every attempt and a JSON run log. Runs against a local demo site that can fail on purpose.
+<br><sub><b>Playwright · FastAPI · retries · Docker · pytest</b></sub>
+</td>
+<td width="50%" valign="top">
+<a href="https://github.com/joel819/llm-cost-router"><img src="assets/llm-cost-router.png" alt="llm-cost-router: benchmark report from a real run, 50 prompts, always-strongest versus routed" width="100%"></a>
+<br>
+<h3><a href="https://github.com/joel819/llm-cost-router">llm-cost-router</a></h3>
+Sends each prompt to the cheapest model that passes a quality check, escalates only on failure, caches repeats and logs cost per request. Prices come from config, never guesses, and the benchmark reports only what a real run measured.
+<br><sub><b>OpenAI-compatible APIs · Groq · routing · caching · benchmark</b></sub>
+</td>
+</tr>
+<tr>
 <td width="50%" valign="top">
 <a href="https://github.com/joel819/support-agent"><img src="assets/support-agent.png" alt="support-agent: answers tagged with the route taken, with expandable tool calls" width="100%"></a>
 <br>
