@@ -147,4 +147,6 @@ Low-confidence flags instead of silent fixes, hard rejects with the numbers, "I 
 
 ## Contact
 
-[X (@joel_depin)](https://x.com/joel_depin)
+[X (@joel_depin)](https://x.com/joel_depin)  
+Email: joeloyewole13@gmail.com  
+Hire me on Upwork: https://www.upwork.com/services/product/development-it-an-ai-chatbot-that-answers-questions-from-your-documents-with-sources-2106016975697311649
