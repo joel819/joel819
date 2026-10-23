@@ -114,7 +114,13 @@ Support agent combining document search with live order lookups via tool calling
 Runs support-agent inside an NVIDIA OpenShell sandbox with an allow-list policy for files and network.
 <br><sub><b>OpenShell · policy as code · Docker</b></sub>
 </td>
-<td></td>
+<td width="33%" valign="top">
+<a href="https://github.com/joel819/aisel-service-request-portal"><img src="assets/aisel-service-request-portal.png" alt="aisel-service-request-portal: a normal user's assistant lists their own requests and refuses to show another user's request" width="100%"></a>
+<br>
+<h3><a href="https://github.com/joel819/aisel-service-request-portal">aisel-service-request-portal</a></h3>
+A service request portal with an AI assistant that answers from the real database. The access rule lives in the service layer, so non-admin users only see their own requests, and the model gets three read-only tools and nothing else. Links and images are stripped from answers, and a 10-question eval catches permission regressions.
+<br><sub><b>FastAPI · Next.js · tool calling · SSE · evals</b></sub>
+</td>
 </tr>
 </table>
 
